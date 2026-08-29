@@ -1,0 +1,8 @@
+### Crear usuario
+POST http://127.0.0.1:8000/usuarios
+Content-Type: application/json
+
+{
+    "nombre": "Sofia",
+    "edad": 22
+}
