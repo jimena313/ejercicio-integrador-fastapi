@@ -1,5 +1,19 @@
-### Probar precio con descuento
-GET http://127.0.0.1:8000/precio?precio=1000&descuento=20
+### Crear alumno
+POST http://127.0.0.1:8000/alumnos
+Content-Type: application/json
 
-### Probar precio sin descuento
-GET http://127.0.0.1:8000/precio?precio=1000
+{
+    "nombre": "Lucia",
+    "edad": 21,
+    "carrera": "Informatica"
+}
+
+### Actualizar alumno
+PUT http://127.0.0.1:8000/alumnos/1
+Content-Type: application/json
+
+{
+    "nombre": "Lucia",
+    "edad": 22,
+    "carrera": "Informatica"
+}

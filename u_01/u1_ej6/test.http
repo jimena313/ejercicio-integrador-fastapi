@@ -1,2 +1,5 @@
-### Probar producto por id
-GET http://127.0.0.1:8000/producto/3
+### Producto existente
+GET http://127.0.0.1:8000/productos/1
+
+### Producto inexistente
+GET http://127.0.0.1:8000/productos/99

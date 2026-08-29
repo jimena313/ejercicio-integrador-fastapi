@@ -1,17 +1,29 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 from pydantic import BaseModel
 
 app = FastAPI()
 
 
-class Usuario(BaseModel):
+class Producto(BaseModel):
     nombre: str
-    edad: int
+    precio: float
+    stock: int
 
 
-@app.post("/usuarios")
-def crear_usuario(usuario: Usuario):
+@app.post("/productos")
+def crear_producto(producto: Producto):
     return {
-        "mensaje": "Usuario creado correctamente",
-        "usuario": usuario
+        "mensaje": "Producto creado correctamente",
+        "producto": producto,
+    }
+
+
+@app.get("/buscar")
+def buscar_producto(
+    nombre: str = Query(..., min_length=2),
+    precio_maximo: float | None = None,
+):
+    return {
+        "nombre": nombre,
+        "precio_maximo": precio_maximo,
     }

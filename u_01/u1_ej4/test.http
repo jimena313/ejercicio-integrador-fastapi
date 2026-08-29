@@ -1,5 +1,8 @@
-### Probar mayor de edad
-GET http://127.0.0.1:8000/edad/20
+### Listar materias
+GET http://127.0.0.1:8000/materias?inicio=0&cantidad=2
 
-### Probar menor de edad
-GET http://127.0.0.1:8000/edad/15
+### Buscar materia
+GET http://127.0.0.1:8000/materias/2?detalle=Materia seleccionada
+
+### Alumno y materia
+GET http://127.0.0.1:8000/alumnos/10/materias/3?observacion=Regular&completo=true

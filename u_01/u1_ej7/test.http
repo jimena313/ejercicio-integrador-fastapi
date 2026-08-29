@@ -1,8 +1,12 @@
-### Crear usuario
-POST http://127.0.0.1:8000/usuarios
+### Crear producto
+POST http://127.0.0.1:8000/productos
 Content-Type: application/json
 
 {
-    "nombre": "Sofia",
-    "edad": 22
+    "nombre": "Auriculares",
+    "precio": 45000,
+    "stock": 8
 }
+
+### Buscar producto
+GET http://127.0.0.1:8000/buscar?nombre=Auriculares&precio_maximo=50000

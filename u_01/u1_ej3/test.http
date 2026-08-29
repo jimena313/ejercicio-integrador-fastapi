@@ -1,2 +1,8 @@
-### Probar cálculo del doble
-GET http://127.0.0.1:8000/doble?numero=8
+### Curso Python
+GET http://127.0.0.1:8000/cursos/python
+
+### Curso Java
+GET http://127.0.0.1:8000/cursos/java
+
+### Curso JavaScript
+GET http://127.0.0.1:8000/cursos/javascript

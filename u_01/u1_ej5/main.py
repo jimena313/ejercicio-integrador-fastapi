@@ -1,13 +1,26 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
 
 app = FastAPI()
 
 
-@app.get("/precio")
-def calcular_precio(precio: float, descuento: float = 0):
-    precio_final = precio - (precio * descuento / 100)
+class Alumno(BaseModel):
+    nombre: str
+    edad: int
+    carrera: str
+
+
+@app.post("/alumnos")
+def crear_alumno(alumno: Alumno):
     return {
-        "precio_original": precio,
-        "descuento": descuento,
-        "precio_final": precio_final
+        "mensaje": "Alumno creado correctamente",
+        "alumno": alumno,
+    }
+
+
+@app.put("/alumnos/{alumno_id}")
+def actualizar_alumno(alumno_id: int, alumno: Alumno):
+    return {
+        "id": alumno_id,
+        "alumno": alumno,
     }

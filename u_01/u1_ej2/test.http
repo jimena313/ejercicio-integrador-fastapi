@@ -1,2 +1,8 @@
-### Probar saludo
-GET http://127.0.0.1:8000/saludo/Jimena
+### Perfil actual
+GET http://127.0.0.1:8000/perfil/actual
+
+### Perfil por nombre
+GET http://127.0.0.1:8000/perfil/Jimena
+
+### Numero entero
+GET http://127.0.0.1:8000/numero/5
