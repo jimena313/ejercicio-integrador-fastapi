@@ -1,0 +1,5 @@
+### Probar mayor de edad
+GET http://127.0.0.1:8000/edad/20
+
+### Probar menor de edad
+GET http://127.0.0.1:8000/edad/15
