@@ -1,0 +1,2 @@
+### Probar cálculo del doble
+GET http://127.0.0.1:8000/doble?numero=8
