@@ -1,0 +1,5 @@
+### Probar precio con descuento
+GET http://127.0.0.1:8000/precio?precio=1000&descuento=20
+
+### Probar precio sin descuento
+GET http://127.0.0.1:8000/precio?precio=1000
