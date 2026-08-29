@@ -1,0 +1,2 @@
+### Probar producto por id
+GET http://127.0.0.1:8000/producto/3
