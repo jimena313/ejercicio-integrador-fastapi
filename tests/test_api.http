@@ -1,0 +1,38 @@
+### Listar categorias
+GET http://127.0.0.1:8000/categorias/
+
+
+### Obtener categoria por id
+GET http://127.0.0.1:8000/categorias/1
+
+
+### Crear categoria
+POST http://127.0.0.1:8000/categorias/
+Content-Type: application/json
+
+{
+  "codigo": "TEC-01",
+  "descripcion": "Tecnologia",
+  "activo": true
+}
+
+
+### Listar productos
+GET http://127.0.0.1:8000/productos/
+
+
+### Obtener producto por id
+GET http://127.0.0.1:8000/productos/1
+
+
+### Crear producto
+POST http://127.0.0.1:8000/productos/
+Content-Type: application/json
+
+{
+  "nombre": "Teclado",
+  "codigo": "TEC-01",
+  "precio": 25000,
+  "stock_minimo": 3,
+  "activo": true
+}
