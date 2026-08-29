@@ -1,15 +1,12 @@
 # Ejercicio Integrador - FastAPI
 
-Ejercicio integrador realizado para practicar la creación de una API REST utilizando FastAPI.
+Ejercicios de la Unidad 1 y ejercicio integrador realizados con FastAPI.
 
 ## Estructura
 
-La aplicación está organizada en módulos para trabajar con:
-
-- Categorías
-- Productos
-
-Cada módulo separa las rutas, los esquemas de datos y la lógica de la aplicación.
+- `u_01/`: ejercicios 1 al 7.
+- `u1_ej_integrador/`: ejercicio integrador.
+- `requirements.txt`: dependencias del proyecto.
 
 ## Ejecutar el proyecto
 
@@ -19,21 +16,15 @@ Instalar las dependencias:
 pip install -r requirements.txt
 ```
 
-Ejecutar la API:
+Ejecutar el integrador:
 
 ```bash
+cd u1_ej_integrador
 python -m fastapi dev app/main.py
 ```
 
-La documentación de la API se puede consultar en `/docs`.
+La documentación de la API está disponible en `/docs`.
 
 ## Endpoints
 
-La API permite:
-
-- Crear categorías
-- Listar categorías
-- Buscar una categoría por id
-- Crear productos
-- Listar productos
-- Buscar un producto por id
+El ejercicio integrador permite trabajar con categorías y productos, incluyendo creación, listado, búsqueda, modificación y control de stock.
